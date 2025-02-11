@@ -26,9 +26,7 @@
 </head>
 
 <body class="bg-gray-100">
-    <h2>Pemrograman Web Lanjut 2024.</h2>
-    <h2>Semangat Belajar Laravel 10!</h2>
-    <h2>Nama Saya Rafi Abiyyu Airlangga XD</h2>
+    <h2>Pemrograman Web Lanjut</h2>
     @stack('skrip')
 </body>
 
