@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 // declare global: diff_match_patch, DIFF_INSERT, DIFF_DELETE, DIFF_EQUAL
 
@@ -183,16 +183,16 @@
       var ratio = (midY - off.top) / (off.bot - off.top);
       var targetPos = (offOther.top - halfScreen) + ratio * (offOther.bot - offOther.top);
 
-      var botDist, mix;
+      var botadminlte/adminlte/dist, mix;
       // Some careful tweaking to make sure no space is left out of view
       // when scrolling to top or bottom.
       if (targetPos > sInfo.top && (mix = sInfo.top / halfScreen) < 1) {
         targetPos = targetPos * mix + sInfo.top * (1 - mix);
-      } else if ((botDist = sInfo.height - sInfo.clientHeight - sInfo.top) < halfScreen) {
+      } else if ((botadminlte/adminlte/dist = sInfo.height - sInfo.clientHeight - sInfo.top) < halfScreen) {
         var otherInfo = other.getScrollInfo();
-        var botDistOther = otherInfo.height - otherInfo.clientHeight - targetPos;
-        if (botDistOther > botDist && (mix = botDist / halfScreen) < 1)
-          targetPos = targetPos * mix + (otherInfo.height - otherInfo.clientHeight - botDist) * (1 - mix);
+        var botadminlte/adminlte/distOther = otherInfo.height - otherInfo.clientHeight - targetPos;
+        if (botadminlte/adminlte/distOther > botadminlte/adminlte/dist && (mix = botadminlte/adminlte/dist / halfScreen) < 1)
+          targetPos = targetPos * mix + (otherInfo.height - otherInfo.clientHeight - botadminlte/adminlte/dist) * (1 - mix);
       }
     }
 

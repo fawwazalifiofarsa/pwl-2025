@@ -14,7 +14,7 @@
  * This source file is free software, available under the following license:
  *   MIT license - http://datatables.net/license/mit
  *
- * This source file is distributed in the hope that it will be useful, but
+ * This source file is adminlte/adminlte/distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  * or FITNESS FOR A PARTICULAR PURPOSE. See the license files for details.
  *
@@ -984,7 +984,7 @@ $.extend( ColReorder.prototype, {
 
 		if ( this.dom.drag === null )
 		{
-			/* Only create the drag element if the mouse has moved a specific distance from the start
+			/* Only create the drag element if the mouse has moved a specific adminlte/adminlte/distance from the start
 			 * point - this allows the user to make small mouse movements when sorting and not have a
 			 * possibly confusing drag element showing up
 			 */

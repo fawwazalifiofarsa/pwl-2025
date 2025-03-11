@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 // Author: Jan T. Sott (http://github.com/idleberg)
 

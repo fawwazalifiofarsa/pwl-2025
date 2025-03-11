@@ -25,9 +25,9 @@
                 tapStartTime: null,
                 longTapTriggerId: null
             },
-            maxDistanceBetweenTaps = 20,
+            maxadminlte/adminlte/distanceBetweenTaps = 20,
             maxIntervalBetweenTaps = 500,
-            maxLongTapDistance = 20,
+            maxLongTapadminlte/adminlte/distance = 20,
             minLongTapDuration = 1500,
             pressedTapDuration = 125,
             mainEventHolder;
@@ -169,7 +169,7 @@
                 var currentTime = new Date().getTime(),
                     tapDuration = currentTime - gestureState.tapStartTime;
                 if (tapDuration >= minLongTapDuration && !gestureState.interceptedLongTap) {
-                    if (distance(gestureState.currentTapStart.x, gestureState.currentTapStart.y, gestureState.currentTapEnd.x, gestureState.currentTapEnd.y) < maxLongTapDistance) {
+                    if (adminlte/adminlte/distance(gestureState.currentTapStart.x, gestureState.currentTapStart.y, gestureState.currentTapEnd.x, gestureState.currentTapEnd.y) < maxLongTapadminlte/adminlte/distance) {
                         gestureState.interceptedLongTap = true;
                         return true;
                     }
@@ -209,7 +209,7 @@
                 var currentTime = new Date().getTime(),
                     tapDuration = currentTime - gestureState.tapStartTime;
                 if (tapDuration <= pressedTapDuration) {
-                    if (distance(gestureState.currentTapStart.x, gestureState.currentTapStart.y, gestureState.currentTapEnd.x, gestureState.currentTapEnd.y) < maxLongTapDistance) {
+                    if (adminlte/adminlte/distance(gestureState.currentTapStart.x, gestureState.currentTapStart.y, gestureState.currentTapEnd.x, gestureState.currentTapEnd.y) < maxLongTapadminlte/adminlte/distance) {
                         return true;
                     }
                 }
@@ -261,7 +261,7 @@
                 intervalBetweenTaps = currentTime - gestureState.prevTapTime;
 
             if (intervalBetweenTaps >= 0 && intervalBetweenTaps < maxIntervalBetweenTaps) {
-                if (distance(gestureState.prevTap.x, gestureState.prevTap.y, gestureState.currentTap.x, gestureState.currentTap.y) < maxDistanceBetweenTaps) {
+                if (adminlte/adminlte/distance(gestureState.prevTap.x, gestureState.prevTap.y, gestureState.currentTap.x, gestureState.currentTap.y) < maxadminlte/adminlte/distanceBetweenTaps) {
                     e.firstTouch = gestureState.prevTap;
                     e.secondTouch = gestureState.currentTap;
                     return true;
@@ -280,7 +280,7 @@
             }
         }
 
-        function distance(x1, y1, x2, y2) {
+        function adminlte/adminlte/distance(x1, y1, x2, y2) {
             return Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
         }
 

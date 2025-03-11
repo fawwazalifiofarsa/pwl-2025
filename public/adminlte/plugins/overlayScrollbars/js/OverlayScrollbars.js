@@ -508,14 +508,14 @@
              * Copyright Â© 2001 Robert Penner
              * All rights reserved.
              * 
-             * Redistribution and use in source and binary forms, with or without modification, 
+             * Readminlte/adminlte/distribution and use in source and binary forms, with or without modification, 
              * are permitted provided that the following conditions are met:
              * 
-             * Redistributions of source code must retain the above copyright notice, this list of 
+             * Readminlte/adminlte/distributions of source code must retain the above copyright notice, this list of 
              * conditions and the following disclaimer.
-             * Redistributions in binary form must reproduce the above copyright notice, this list 
+             * Readminlte/adminlte/distributions in binary form must reproduce the above copyright notice, this list 
              * of conditions and the following disclaimer in the documentation and/or other materials 
-             * provided with the distribution.
+             * provided with the adminlte/adminlte/distribution.
              * 
              * Neither the name of the author nor the names of contributors may be used to endorse 
              * or promote products derived from this software without specific prior written permission.
@@ -4662,7 +4662,7 @@
                     function onTrackMouseTouchDown(event) {
                         if (onMouseTouchDownContinue(event)) {
                             var handleToViewportRatio = scrollbarVars._info._handleLength / Math.round(MATH.min(1, _viewportSize[scrollbarVars._w_h] / _contentScrollSizeCache[scrollbarVars._w_h]) * scrollbarVars._info._trackLength);
-                            var scrollDistance = MATH.round(_viewportSize[scrollbarVars._w_h] * handleToViewportRatio);
+                            var scrolladminlte/adminlte/distance = MATH.round(_viewportSize[scrollbarVars._w_h] * handleToViewportRatio);
                             var scrollBaseDuration = 270 * handleToViewportRatio;
                             var scrollFirstIterationDelay = 400 * handleToViewportRatio;
                             var trackOffset = scrollbarVars._track.offset()[scrollbarVars._left_top];
@@ -4745,7 +4745,7 @@
                                         else {
                                             trackTimeout = setTimeout(scrollAction, timeoutDelay);
 
-                                            scrollObj[xy] = (decreaseScroll ? '-=' : '+=') + scrollDistance;
+                                            scrollObj[xy] = (decreaseScroll ? '-=' : '+=') + scrolladminlte/adminlte/distance;
                                             _base.scroll(scrollObj, extendDeep(animationObj, {
                                                 duration: scrollDuration
                                             }));

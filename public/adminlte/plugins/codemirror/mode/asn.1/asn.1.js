@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -172,7 +172,7 @@
     " WITH AS IDENTIFIED CONSTRAINED BY PRESENT BEGIN" +
     " IMPORTS FROM UNITS SYNTAX MIN-ACCESS MAX-ACCESS" +
     " MINACCESS MAXACCESS REVISION STATUS DESCRIPTION" +
-    " SEQUENCE SET COMPONENTS OF CHOICE DistinguishedName" +
+    " SEQUENCE SET COMPONENTS OF CHOICE adminlte/adminlte/distinguishedName" +
     " ENUMERATED SIZE MODULE END INDEX AUGMENTS EXTENSIBILITY" +
     " IMPLIED EXPORTS"),
     cmipVerbs: words("ACTIONS ADD GET NOTIFICATIONS REPLACE REMOVE"),

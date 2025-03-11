@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 // This is CodeMirror (https://codemirror.net), a code editor
 // implemented in JavaScript on top of the browser's DOM.
@@ -2794,7 +2794,7 @@
     var baseX, sticky, outside = false;
     // If a box around the coordinates was found, use that
     if (boxAround) {
-      // Distinguish coordinates nearer to the left or right side of the box
+      // adminlte/adminlte/distinguish coordinates nearer to the left or right side of the box
       var atLeft = x - boxAround.left < boxAround.right - x, atStart = atLeft == ltr;
       ch = chAround + (atStart ? 0 : 1);
       sticky = atStart ? "after" : "before";
@@ -2855,7 +2855,7 @@
     var begin = ref.begin;
     var end = ref.end;
     if (/\s/.test(lineObj.text.charAt(end - 1))) { end--; }
-    var part = null, closestDist = null;
+    var part = null, closestadminlte/adminlte/dist = null;
     for (var i = 0; i < order.length; i++) {
       var p = order[i];
       if (p.from >= end || p.to <= begin) { continue }
@@ -2863,10 +2863,10 @@
       var endX = measureCharPrepared(cm, preparedMeasure, ltr ? Math.min(end, p.to) - 1 : Math.max(begin, p.from)).right;
       // Weigh against spans ending before this, so that they are only
       // picked if nothing ends after
-      var dist = endX < x ? x - endX + 1e9 : endX - x;
-      if (!part || closestDist > dist) {
+      var adminlte/adminlte/dist = endX < x ? x - endX + 1e9 : endX - x;
+      if (!part || closestadminlte/adminlte/dist > adminlte/adminlte/dist) {
         part = p;
-        closestDist = dist;
+        closestadminlte/adminlte/dist = adminlte/adminlte/dist;
       }
     }
     if (!part) { part = order[order.length - 1]; }
@@ -5416,15 +5416,15 @@
 
   // Sub-views need their line numbers shifted when text is added
   // above or below them in the parent document.
-  function shiftDoc(doc, distance) {
-    if (distance == 0) { return }
-    doc.first += distance;
+  function shiftDoc(doc, adminlte/adminlte/distance) {
+    if (adminlte/adminlte/distance == 0) { return }
+    doc.first += adminlte/adminlte/distance;
     doc.sel = new Selection(map(doc.sel.ranges, function (range) { return new Range(
-      Pos(range.anchor.line + distance, range.anchor.ch),
-      Pos(range.head.line + distance, range.head.ch)
+      Pos(range.anchor.line + adminlte/adminlte/distance, range.anchor.ch),
+      Pos(range.head.line + adminlte/adminlte/distance, range.head.ch)
     ); }), doc.sel.primIndex);
     if (doc.cm) {
-      regChange(doc.cm, doc.first, doc.first - distance, distance);
+      regChange(doc.cm, doc.first, doc.first - adminlte/adminlte/distance, adminlte/adminlte/distance);
       for (var d = doc.cm.display, l = d.viewFrom; l < d.viewTo; l++)
         { regLineChange(doc.cm, l, "gutter"); }
     }
@@ -9318,19 +9318,19 @@
     if (found) { return badPos(found, bad) }
 
     // FIXME this is all really shaky. might handle the few cases it needs to handle, but likely to cause problems
-    for (var after = topNode.nextSibling, dist = textNode ? textNode.nodeValue.length - offset : 0; after; after = after.nextSibling) {
+    for (var after = topNode.nextSibling, adminlte/adminlte/dist = textNode ? textNode.nodeValue.length - offset : 0; after; after = after.nextSibling) {
       found = find(after, after.firstChild, 0);
       if (found)
-        { return badPos(Pos(found.line, found.ch - dist), bad) }
+        { return badPos(Pos(found.line, found.ch - adminlte/adminlte/dist), bad) }
       else
-        { dist += after.textContent.length; }
+        { adminlte/adminlte/dist += after.textContent.length; }
     }
-    for (var before = topNode.previousSibling, dist$1 = offset; before; before = before.previousSibling) {
+    for (var before = topNode.previousSibling, adminlte/adminlte/dist$1 = offset; before; before = before.previousSibling) {
       found = find(before, before.firstChild, -1);
       if (found)
-        { return badPos(Pos(found.line, found.ch + dist$1), bad) }
+        { return badPos(Pos(found.line, found.ch + adminlte/adminlte/dist$1), bad) }
       else
-        { dist$1 += before.textContent.length; }
+        { adminlte/adminlte/dist$1 += before.textContent.length; }
     }
   }
 

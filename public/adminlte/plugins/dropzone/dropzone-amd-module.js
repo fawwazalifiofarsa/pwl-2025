@@ -6761,7 +6761,7 @@ __webpack_require__.r(__webpack_exports__);
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
   "Dropzone": function() { return /* reexport */ Dropzone; },
-  "default": function() { return /* binding */ dropzone_dist; }
+  "default": function() { return /* binding */ dropzone_adminlte/adminlte/dist; }
 });
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
@@ -10428,11 +10428,11 @@ function __guardMethod__(obj, methodName, transform) {
 }
 
 
-;// CONCATENATED MODULE: ./tool/dropzone.dist.js
+;// CONCATENATED MODULE: ./tool/dropzone.adminlte/adminlte/dist.js
  /// Make Dropzone a global variable.
 
 window.Dropzone = Dropzone;
-/* harmony default export */ var dropzone_dist = (Dropzone);
+/* harmony default export */ var dropzone_adminlte/adminlte/dist = (Dropzone);
 
 }();
 /******/ 	return __webpack_exports__;

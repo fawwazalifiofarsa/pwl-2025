@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -724,7 +724,7 @@ CodeMirror.defineMode("clike", function(config, parserConfig) {
     builtin: words("radians degrees sin cos tan asin acos atan " +
                     "pow exp log exp2 sqrt inversesqrt " +
                     "abs sign floor ceil fract mod min max clamp mix step smoothstep " +
-                    "length distance dot cross normalize ftransform faceforward " +
+                    "length adminlte/adminlte/distance dot cross normalize ftransform faceforward " +
                     "reflect refract matrixCompMult " +
                     "lessThan lessThanEqual greaterThan greaterThanEqual " +
                     "equal notEqual any all not " +

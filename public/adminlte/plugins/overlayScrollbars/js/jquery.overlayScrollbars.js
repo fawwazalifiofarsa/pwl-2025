@@ -3579,7 +3579,7 @@
                     function onTrackMouseTouchDown(event) {
                         if (onMouseTouchDownContinue(event)) {
                             var handleToViewportRatio = scrollbarVars._info._handleLength / Math.round(MATH.min(1, _viewportSize[scrollbarVars._w_h] / _contentScrollSizeCache[scrollbarVars._w_h]) * scrollbarVars._info._trackLength);
-                            var scrollDistance = MATH.round(_viewportSize[scrollbarVars._w_h] * handleToViewportRatio);
+                            var scrolladminlte/adminlte/distance = MATH.round(_viewportSize[scrollbarVars._w_h] * handleToViewportRatio);
                             var scrollBaseDuration = 270 * handleToViewportRatio;
                             var scrollFirstIterationDelay = 400 * handleToViewportRatio;
                             var trackOffset = scrollbarVars._track.offset()[scrollbarVars._left_top];
@@ -3662,7 +3662,7 @@
                                         else {
                                             trackTimeout = setTimeout(scrollAction, timeoutDelay);
 
-                                            scrollObj[xy] = (decreaseScroll ? '-=' : '+=') + scrollDistance;
+                                            scrollObj[xy] = (decreaseScroll ? '-=' : '+=') + scrolladminlte/adminlte/distance;
                                             _base.scroll(scrollObj, extendDeep(animationObj, {
                                                 duration: scrollDuration
                                             }));

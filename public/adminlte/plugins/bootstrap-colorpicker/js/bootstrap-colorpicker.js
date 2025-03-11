@@ -1940,9 +1940,9 @@ convert.rgb.cmyk = function (rgb) {
 };
 
 /**
- * See https://en.m.wikipedia.org/wiki/Euclidean_distance#Squared_Euclidean_distance
+ * See https://en.m.wikipedia.org/wiki/Euclidean_adminlte/adminlte/distance#Squared_Euclidean_adminlte/adminlte/distance
  * */
-function comparativeDistance(x, y) {
+function comparativeadminlte/adminlte/distance(x, y) {
 	return (
 		Math.pow(x[0] - y[0], 2) +
 		Math.pow(x[1] - y[1], 2) +
@@ -1956,19 +1956,19 @@ convert.rgb.keyword = function (rgb) {
 		return reversed;
 	}
 
-	var currentClosestDistance = Infinity;
+	var currentClosestadminlte/adminlte/distance = Infinity;
 	var currentClosestKeyword;
 
 	for (var keyword in cssKeywords) {
 		if (cssKeywords.hasOwnProperty(keyword)) {
 			var value = cssKeywords[keyword];
 
-			// Compute comparative distance
-			var distance = comparativeDistance(rgb, value);
+			// Compute comparative adminlte/adminlte/distance
+			var adminlte/adminlte/distance = comparativeadminlte/adminlte/distance(rgb, value);
 
 			// Check if its less, if so set as closest
-			if (distance < currentClosestDistance) {
-				currentClosestDistance = distance;
+			if (adminlte/adminlte/distance < currentClosestadminlte/adminlte/distance) {
+				currentClosestadminlte/adminlte/distance = adminlte/adminlte/distance;
 				currentClosestKeyword = keyword;
 			}
 		}
@@ -5661,7 +5661,7 @@ function buildGraph() {
 		graph[models[i]] = {
 			// http://jsperf.com/1-vs-infinity
 			// micro-opt, but this is simple.
-			distance: -1,
+			adminlte/adminlte/distance: -1,
 			parent: null
 		};
 	}
@@ -5674,7 +5674,7 @@ function deriveBFS(fromModel) {
 	var graph = buildGraph();
 	var queue = [fromModel]; // unshift -> queue -> pop
 
-	graph[fromModel].distance = 0;
+	graph[fromModel].adminlte/adminlte/distance = 0;
 
 	while (queue.length) {
 		var current = queue.pop();
@@ -5684,8 +5684,8 @@ function deriveBFS(fromModel) {
 			var adjacent = adjacents[i];
 			var node = graph[adjacent];
 
-			if (node.distance === -1) {
-				node.distance = graph[current].distance + 1;
+			if (node.adminlte/adminlte/distance === -1) {
+				node.adminlte/adminlte/distance = graph[current].adminlte/adminlte/distance + 1;
 				node.parent = current;
 				queue.unshift(adjacent);
 			}

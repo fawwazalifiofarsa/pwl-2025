@@ -1,28 +1,28 @@
 'use strict'
 
 const Plugins = [
-  // AdminLTE Dist
+  // AdminLTE adminlte/adminlte/dist
   {
-    from: 'dist/css/',
+    from: 'adminlte/adminlte/dist/css/',
     to: 'docs/assets/css/'
   },
   {
-    from: 'dist/js/',
+    from: 'adminlte/adminlte/dist/js/',
     to: 'docs/assets/js/'
   },
   // jQuery
   {
-    from: 'node_modules/jquery/dist/',
+    from: 'node_modules/jquery/adminlte/adminlte/dist/',
     to: 'docs/assets/plugins/jquery/'
   },
   // Popper
   {
-    from: 'node_modules/popper.js/dist/',
+    from: 'node_modules/popper.js/adminlte/adminlte/dist/',
     to: 'docs/assets/plugins/popper/'
   },
   // Bootstrap
   {
-    from: 'node_modules/bootstrap/dist/js/',
+    from: 'node_modules/bootstrap/adminlte/adminlte/dist/js/',
     to: 'docs/assets/plugins/bootstrap/js/'
   },
   // Font Awesome

@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -35,7 +35,7 @@ CodeMirror.defineMode("xquery", function() {
     'ascending', 'at', 'attribute', 'base-uri', 'before', 'boundary-space', 'by', 'case', 'cast',
     'castable', 'catch', 'child', 'collation', 'comment', 'construction', 'contains', 'content',
     'context', 'copy', 'copy-namespaces', 'count', 'decimal-format', 'declare', 'default', 'delete',
-    'descendant', 'descendant-or-self', 'descending', 'diacritics', 'different', 'distance',
+    'descendant', 'descendant-or-self', 'descending', 'diacritics', 'different', 'adminlte/adminlte/distance',
     'document', 'document-node', 'element', 'else', 'empty', 'empty-sequence', 'encoding', 'end',
     'entire', 'every', 'exactly', 'except', 'external', 'first', 'following', 'following-sibling',
     'for', 'from', 'ftand', 'ftnot', 'ft-option', 'ftor', 'function', 'fuzzy', 'greatest', 'group',

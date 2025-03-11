@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 // Depends on jsonlint.js from https://github.com/zaach/jsonlint
 
@@ -23,7 +23,7 @@ CodeMirror.registerHelper("lint", "json", function(text) {
     }
     return found;
   }
-  // for jsonlint's web dist jsonlint is exported as an object with a single property parser, of which parseError
+  // for jsonlint's web adminlte/adminlte/dist jsonlint is exported as an object with a single property parser, of which parseError
   // is a subproperty
   var jsonlint = window.jsonlint.parser || window.jsonlint
   jsonlint.parseError = function(str, hash) {

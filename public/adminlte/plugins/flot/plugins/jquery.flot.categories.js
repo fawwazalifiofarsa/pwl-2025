@@ -20,7 +20,7 @@ and list the categories there:
         categories: ["February", "March", "April"]
     }
 
-If you need to customize the distances between the categories, you can specify
+If you need to customize the adminlte/adminlte/distances between the categories, you can specify
 "categories" as an object mapping labels to values
 
     xaxis: {

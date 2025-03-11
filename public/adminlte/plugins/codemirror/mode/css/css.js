@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -513,7 +513,7 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "max-width", "min-block-size", "min-height", "min-inline-size", "min-width",
     "mix-blend-mode", "move-to", "nav-down", "nav-index", "nav-left", "nav-right",
     "nav-up", "object-fit", "object-position", "offset", "offset-anchor",
-    "offset-distance", "offset-path", "offset-position", "offset-rotate",
+    "offset-adminlte/adminlte/distance", "offset-path", "offset-position", "offset-rotate",
     "opacity", "order", "orphans", "outline", "outline-color", "outline-offset",
     "outline-style", "outline-width", "overflow", "overflow-style",
     "overflow-wrap", "overflow-x", "overflow-y", "padding", "padding-bottom",

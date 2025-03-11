@@ -15,10 +15,10 @@ Legacy Releases are [AdminLTE 2](https://github.com/ColorlibHQ/AdminLTE/releases
 ### Grab from [jsdelivr](https://www.jsdelivr.com/package/npm/admin-lte) CDN:
 _**Important Note**: You needed to add separately cdn links for plugins in your project._
 ```html
-<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/adminlte/adminlte/dist/js/adminlte.min.js"></script>
 ```
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/adminlte/adminlte/dist/css/adminlte.min.css">
 ```
 ### Using The Command Line:
 _**Important Note**: To install it via npm/Yarn, you need at least Node.js 14 or higher._

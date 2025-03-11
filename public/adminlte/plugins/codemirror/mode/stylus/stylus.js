@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 // Stylus mode created by Dmitry Kiselyov http://git.io/AaRB
 
@@ -137,7 +137,7 @@
       if (stream.match(/^\$?[-_]*[a-z0-9]+[\w-]*/i)) {
         // Variable
         if (stream.match(/^(\.|\[)[\w-\'\"\]]+/i, false)) {
-          if (!wordIsTag(stream.current())) {
+          if (!woradminlte/adminlte/distag(stream.current())) {
             stream.match('.');
             return ["variable-2", "variable-name"];
           }
@@ -241,7 +241,7 @@
     /**
      * Parser
      */
-    function wordIsTag(word) {
+    function woradminlte/adminlte/distag(word) {
       return word.toLowerCase() in tagKeywords;
     }
 
@@ -261,7 +261,7 @@
     function wordAsValue(word) {
       var wordLC = word.toLowerCase();
       var override = "variable-2";
-      if (wordIsTag(word)) override = "tag";
+      if (woradminlte/adminlte/distag(word)) override = "tag";
       else if (wordIsBlock(word)) override = "block-keyword";
       else if (wordIsProperty(word)) override = "property";
       else if (wordLC in valueKeywords || wordLC in commonAtoms) override = "atom";
@@ -312,7 +312,7 @@
         return pushContext(state, stream, "interpolation");
       }
       if (endOfLine(stream) && type == "]") {
-        if (!/^\s*(\.|#|:|\[|\*|&)/.test(stream.string) && !wordIsTag(firstWordOfLine(stream))) {
+        if (!/^\s*(\.|#|:|\[|\*|&)/.test(stream.string) && !woradminlte/adminlte/distag(firstWordOfLine(stream))) {
           return pushContext(state, stream, "block", 0);
         }
       }
@@ -410,7 +410,7 @@
             if ((startOfLine(stream) && stream.string.match(/=/)) ||
                 (!startOfLine(stream) &&
                  !stream.string.match(/^(\s*\.|#|\&|\[|\/|>|\*)/) &&
-                 !wordIsTag(firstWordOfLine(stream)))) {
+                 !woradminlte/adminlte/distag(firstWordOfLine(stream)))) {
               override = "variable-2";
               if (wordIsBlock(firstWordOfLine(stream)))  return "block";
               return pushContext(state, stream, "block", 0);
@@ -452,7 +452,7 @@
             wordIsBlock(firstWordOfLine(stream)) ||
             /(\.|#|:|\[|\*|&|>|~|\+|\/)/.test(firstWordOfLine(stream)) ||
             (!stream.string.match(/^-?[a-z][\w-\.\[\]\'\"]*\s*=/) &&
-             wordIsTag(firstWordOfLine(stream)))) {
+             woradminlte/adminlte/distag(firstWordOfLine(stream)))) {
           return pushContext(state, stream, "block");
         }
         if (stream.string.match(/^[\$-]?[a-z][\w-\.\[\]\'\"]*\s*=/) ||
@@ -569,7 +569,7 @@
      */
     states.keyframes = function(type, stream, state) {
       if (stream.indentation() == "0" && ((type == "}" && startOfLine(stream)) || type == "]" || type == "hash"
-                                          || type == "qualifier" || wordIsTag(stream.current()))) {
+                                          || type == "qualifier" || woradminlte/adminlte/distag(stream.current()))) {
         return popAndPass(type, stream, state);
       }
       if (type == "{") return pushContext(state, stream, "keyframes");
@@ -604,7 +604,7 @@
       if (type == "{") popContext(state) && pushContext(state, stream, "block");
       if (type == "}") {
         if (stream.string.match(/^\s*(\.|#|:|\[|\*|&|>|~|\+|\/)/i) ||
-            (stream.string.match(/^\s*[a-z]/i) && wordIsTag(firstWordOfLine(stream)))) {
+            (stream.string.match(/^\s*[a-z]/i) && woradminlte/adminlte/distag(firstWordOfLine(stream)))) {
           return pushContext(state, stream, "block");
         }
         if (!stream.string.match(/^(\{|\s*\&)/) ||
@@ -694,10 +694,10 @@
 /^return/.test(textAfter) ||
               wordIsBlock(lineFirstWord)) {
             indent = lineIndent;
-          } else if (/(\.|#|:|\[|\*|&|>|~|\+|\/)/.test(ch) || wordIsTag(lineFirstWord)) {
+          } else if (/(\.|#|:|\[|\*|&|>|~|\+|\/)/.test(ch) || woradminlte/adminlte/distag(lineFirstWord)) {
             if (/\,\s*$/.test(prevLineFirstWord)) {
               indent = prevLineIndent;
-            } else if (/^\s+/.test(line) && (/(\.|#|:|\[|\*|&|>|~|\+|\/)/.test(prevLineFirstWord) || wordIsTag(prevLineFirstWord))) {
+            } else if (/^\s+/.test(line) && (/(\.|#|:|\[|\*|&|>|~|\+|\/)/.test(prevLineFirstWord) || woradminlte/adminlte/distag(prevLineFirstWord))) {
               indent = lineIndent <= prevLineIndent ? prevLineIndent : prevLineIndent + indentUnit;
             } else {
               indent = lineIndent;
@@ -711,7 +711,7 @@
               indent = lineIndent >= prevLineIndent ? prevLineIndent : lineIndent;
             } else if (/^(\.|#|:|\[|\*|&|@|\+|\-|>|~|\/)/.test(prevLineFirstWord) ||
                       /=\s*$/.test(prevLineFirstWord) ||
-                      wordIsTag(prevLineFirstWord) ||
+                      woradminlte/adminlte/distag(prevLineFirstWord) ||
                       /^\$[\w-\.\[\]\'\"]/.test(prevLineFirstWord)) {
               indent = prevLineIndent + indentUnit;
             } else {

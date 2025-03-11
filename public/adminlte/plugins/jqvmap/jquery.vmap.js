@@ -645,7 +645,7 @@ JQVMap.prototype.makeDraggable = function () {
   var lastTouchCount;
   var touchCenterX;
   var touchCenterY;
-  var touchStartDistance;
+  var touchStartadminlte/adminlte/distance;
   var touchStartScale;
   var touchX;
   var touchY;
@@ -746,7 +746,7 @@ JQVMap.prototype.makeDraggable = function () {
         scale = Math.sqrt(
             Math.pow(touches[0].pageX - touches[1].pageX, 2) +
             Math.pow(touches[0].pageY - touches[1].pageY, 2)
-          ) / touchStartDistance;
+          ) / touchStartadminlte/adminlte/distance;
 
         self.setScale(
           touchStartScale * scale,
@@ -775,7 +775,7 @@ JQVMap.prototype.makeDraggable = function () {
         touchCenterY -= offset.top;
         touchStartScale = self.scale;
 
-        touchStartDistance = Math.sqrt(
+        touchStartadminlte/adminlte/distance = Math.sqrt(
           Math.pow(touches[0].pageX - touches[1].pageX, 2) +
           Math.pow(touches[0].pageY - touches[1].pageY, 2)
         );

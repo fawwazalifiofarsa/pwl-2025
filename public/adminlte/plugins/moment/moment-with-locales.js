@@ -3936,7 +3936,7 @@
      * Return a human readable representation of a moment that can
      * also be evaluated to get a new moment which is the same
      *
-     * @link https://nodejs.org/dist/latest/docs/api/util.html#util_custom_inspect_function_on_objects
+     * @link https://nodejs.org/adminlte/adminlte/dist/latest/docs/api/util.html#util_custom_inspect_function_on_objects
      */
     function inspect() {
         if (!this.isValid()) {

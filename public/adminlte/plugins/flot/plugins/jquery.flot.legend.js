@@ -10,7 +10,7 @@
             labelFormatter: null, // fn: string -> string
             container: null, // container (as jQuery object) to put legend in, null means default on top of graph
             position: 'ne', // position of default legend container within plot
-            margin: 5, // distance from grid edge to default legend container within plot
+            margin: 5, // adminlte/adminlte/distance from grid edge to default legend container within plot
             sorted: null // default to no legend sorting
         }
     };

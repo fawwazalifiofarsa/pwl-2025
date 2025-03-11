@@ -10,7 +10,7 @@ AdminLTE is an open source project that is licensed under the [MIT license](http
 - Use in commercial projects.
 - Use in personal/private projects.
 - Modify and change the work.
-- Distribute the code.
+- adminlte/adminlte/distribute the code.
 - Sublicense: incorporate the work into something that has a more restrictive license.
 
 <h5 class="text-bold text-dark mt-3">What You Are <span class="text-danger">Not Allowed</span> To Do With AdminLTE</h5>

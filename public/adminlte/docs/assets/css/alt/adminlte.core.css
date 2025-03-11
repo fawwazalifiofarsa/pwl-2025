@@ -7357,7 +7357,7 @@ button.bg-dark:focus {
 }
 
 .justify-content-around {
-  -ms-flex-pack: distribute !important;
+  -ms-flex-pack: adminlte/adminlte/distribute !important;
   justify-content: space-around !important;
 }
 
@@ -7407,7 +7407,7 @@ button.bg-dark:focus {
 }
 
 .align-content-around {
-  -ms-flex-line-pack: distribute !important;
+  -ms-flex-line-pack: adminlte/adminlte/distribute !important;
   align-content: space-around !important;
 }
 
@@ -7512,7 +7512,7 @@ button.bg-dark:focus {
     justify-content: space-between !important;
   }
   .justify-content-sm-around {
-    -ms-flex-pack: distribute !important;
+    -ms-flex-pack: adminlte/adminlte/distribute !important;
     justify-content: space-around !important;
   }
   .align-items-sm-start {
@@ -7552,7 +7552,7 @@ button.bg-dark:focus {
     align-content: space-between !important;
   }
   .align-content-sm-around {
-    -ms-flex-line-pack: distribute !important;
+    -ms-flex-line-pack: adminlte/adminlte/distribute !important;
     align-content: space-around !important;
   }
   .align-content-sm-stretch {
@@ -7651,7 +7651,7 @@ button.bg-dark:focus {
     justify-content: space-between !important;
   }
   .justify-content-md-around {
-    -ms-flex-pack: distribute !important;
+    -ms-flex-pack: adminlte/adminlte/distribute !important;
     justify-content: space-around !important;
   }
   .align-items-md-start {
@@ -7691,7 +7691,7 @@ button.bg-dark:focus {
     align-content: space-between !important;
   }
   .align-content-md-around {
-    -ms-flex-line-pack: distribute !important;
+    -ms-flex-line-pack: adminlte/adminlte/distribute !important;
     align-content: space-around !important;
   }
   .align-content-md-stretch {
@@ -7790,7 +7790,7 @@ button.bg-dark:focus {
     justify-content: space-between !important;
   }
   .justify-content-lg-around {
-    -ms-flex-pack: distribute !important;
+    -ms-flex-pack: adminlte/adminlte/distribute !important;
     justify-content: space-around !important;
   }
   .align-items-lg-start {
@@ -7830,7 +7830,7 @@ button.bg-dark:focus {
     align-content: space-between !important;
   }
   .align-content-lg-around {
-    -ms-flex-line-pack: distribute !important;
+    -ms-flex-line-pack: adminlte/adminlte/distribute !important;
     align-content: space-around !important;
   }
   .align-content-lg-stretch {
@@ -7929,7 +7929,7 @@ button.bg-dark:focus {
     justify-content: space-between !important;
   }
   .justify-content-xl-around {
-    -ms-flex-pack: distribute !important;
+    -ms-flex-pack: adminlte/adminlte/distribute !important;
     justify-content: space-around !important;
   }
   .align-items-xl-start {
@@ -7969,7 +7969,7 @@ button.bg-dark:focus {
     align-content: space-between !important;
   }
   .align-content-xl-around {
-    -ms-flex-line-pack: distribute !important;
+    -ms-flex-line-pack: adminlte/adminlte/distribute !important;
     align-content: space-around !important;
   }
   .align-content-xl-stretch {

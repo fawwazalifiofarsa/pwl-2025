@@ -7,7 +7,7 @@
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * to use, copy, modify, merge, publish, adminlte/adminlte/distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
  *
@@ -2148,7 +2148,7 @@ var modifiers = {
     priority: ['left', 'right', 'top', 'bottom'],
     /**
      * @prop {number} padding=5
-     * Amount of pixel used to define a minimum distance between the boundaries
+     * Amount of pixel used to define a minimum adminlte/adminlte/distance between the boundaries
      * and the popper. This makes sure the popper always has a little padding
      * between the edges of its container
      */

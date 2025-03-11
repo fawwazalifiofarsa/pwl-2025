@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -56,7 +56,7 @@
     'dialog_message', 'dialog_pickfile', 'dialog_printersetup',
     'dialog_printjob', 'dialog_read_image',
     'dialog_write_image', 'dictionary', 'digital_filter', 'dilate', 'dindgen',
-    'dissolve', 'dist', 'distance_measure', 'dlm_load', 'dlm_register',
+    'dissolve', 'adminlte/adminlte/dist', 'adminlte/adminlte/distance_measure', 'dlm_load', 'dlm_register',
     'doc_library', 'double', 'draw_roi', 'edge_dog', 'efont',
     'eigenql', 'eigenvec', 'ellipse', 'elmhes', 'emboss',
     'empty', 'enable_sysrtn', 'eof', 'eos', 'erase',
@@ -109,7 +109,7 @@
     'la_trisol', 'label_date', 'label_region', 'ladfit', 'laguerre',
     'lambda', 'lambdap', 'lambertw', 'laplacian', 'least_squares_filter',
     'leefilt', 'legend', 'legendre', 'linbcg', 'lindgen',
-    'linfit', 'linkimage', 'list', 'll_arc_distance', 'lmfit',
+    'linfit', 'linkimage', 'list', 'll_arc_adminlte/adminlte/distance', 'lmfit',
     'lmgr', 'lngamma', 'lnp_test', 'loadct', 'locale_get',
     'logical_and', 'logical_or', 'logical_true', 'lon64arr', 'lonarr',
     'long', 'long64', 'lsode', 'lu_complex', 'ludc',
@@ -125,7 +125,7 @@
     'mesh_obj', 'mesh_smooth', 'mesh_surfacearea',
     'mesh_validate', 'mesh_volume',
     'message', 'min', 'min_curve_surf', 'mk_html_help', 'modifyct',
-    'moment', 'morph_close', 'morph_distance',
+    'moment', 'morph_close', 'morph_adminlte/adminlte/distance',
     'morph_gradient', 'morph_hitormiss',
     'morph_open', 'morph_thin', 'morph_tophat', 'multi', 'n_elements',
     'n_params', 'n_tags', 'ncdf', 'newton', 'noise_hurl',

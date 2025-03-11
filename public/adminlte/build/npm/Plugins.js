@@ -3,17 +3,17 @@
 const Plugins = [
   // jQuery
   {
-    from: 'node_modules/jquery/dist',
+    from: 'node_modules/jquery/adminlte/adminlte/dist',
     to: 'plugins/jquery'
   },
   // Popper
   {
-    from: 'node_modules/popper.js/dist',
+    from: 'node_modules/popper.js/adminlte/adminlte/dist',
     to: 'plugins/popper'
   },
   // Bootstrap
   {
-    from: 'node_modules/bootstrap/dist/js',
+    from: 'node_modules/bootstrap/adminlte/adminlte/dist/js',
     to: 'plugins/bootstrap/js'
   },
   // Font Awesome
@@ -36,17 +36,17 @@ const Plugins = [
   },
   // Chart.js
   {
-    from: 'node_modules/chart.js/dist/',
+    from: 'node_modules/chart.js/adminlte/adminlte/dist/',
     to: 'plugins/chart.js'
   },
   // jQuery UI
   {
-    from: 'node_modules/jquery-ui-dist/',
+    from: 'node_modules/jquery-ui-adminlte/adminlte/dist/',
     to: 'plugins/jquery-ui'
   },
   // Flot
   {
-    from: 'node_modules/flot/dist/es5/',
+    from: 'node_modules/flot/adminlte/adminlte/dist/es5/',
     to: 'plugins/flot'
   },
   {
@@ -55,25 +55,25 @@ const Plugins = [
   },
   // Summernote
   {
-    from: 'node_modules/summernote/dist/',
+    from: 'node_modules/summernote/adminlte/adminlte/dist/',
     to: 'plugins/summernote'
   },
   // Bootstrap Slider
   {
-    from: 'node_modules/bootstrap-slider/dist/',
+    from: 'node_modules/bootstrap-slider/adminlte/adminlte/dist/',
     to: 'plugins/bootstrap-slider'
   },
   {
-    from: 'node_modules/bootstrap-slider/dist/css',
+    from: 'node_modules/bootstrap-slider/adminlte/adminlte/dist/css',
     to: 'plugins/bootstrap-slider/css'
   },
   // Bootstrap Colorpicker
   {
-    from: 'node_modules/bootstrap-colorpicker/dist/js',
+    from: 'node_modules/bootstrap-colorpicker/adminlte/adminlte/dist/js',
     to: 'plugins/bootstrap-colorpicker/js'
   },
   {
-    from: 'node_modules/bootstrap-colorpicker/dist/css',
+    from: 'node_modules/bootstrap-colorpicker/adminlte/adminlte/dist/css',
     to: 'plugins/bootstrap-colorpicker/css'
   },
   // Tempusdominus Bootstrap 4
@@ -110,7 +110,7 @@ const Plugins = [
     to: 'plugins/pdfmake'
   },
   {
-    from: 'node_modules/jszip/dist',
+    from: 'node_modules/jszip/adminlte/adminlte/dist',
     to: 'plugins/jszip'
   },
   {
@@ -294,7 +294,7 @@ const Plugins = [
   },
   // inputmask
   {
-    from: 'node_modules/inputmask/dist/',
+    from: 'node_modules/inputmask/adminlte/adminlte/dist/',
     to: 'plugins/inputmask'
   },
   // ion-rangeslider
@@ -304,7 +304,7 @@ const Plugins = [
   },
   // JQVMap (jqvmap-novulnerability)
   {
-    from: 'node_modules/jqvmap-novulnerability/dist/',
+    from: 'node_modules/jqvmap-novulnerability/adminlte/adminlte/dist/',
     to: 'plugins/jqvmap'
   },
   // jQuery Mapael
@@ -324,21 +324,21 @@ const Plugins = [
   },
   // jQuery Knob
   {
-    from: 'node_modules/jquery-knob-chif/dist/',
+    from: 'node_modules/jquery-knob-chif/adminlte/adminlte/dist/',
     to: 'plugins/jquery-knob'
   },
   // pace-progress
   {
-    from: 'node_modules/@lgaitan/pace-progress/dist/',
+    from: 'node_modules/@lgaitan/pace-progress/adminlte/adminlte/dist/',
     to: 'plugins/pace-progress'
   },
   // Select2
   {
-    from: 'node_modules/select2/dist/',
+    from: 'node_modules/select2/adminlte/adminlte/dist/',
     to: 'plugins/select2'
   },
   {
-    from: 'node_modules/@ttskch/select2-bootstrap4-theme/dist/',
+    from: 'node_modules/@ttskch/select2-bootstrap4-theme/adminlte/adminlte/dist/',
     to: 'plugins/select2-bootstrap4-theme'
   },
   // Sparklines
@@ -348,7 +348,7 @@ const Plugins = [
   },
   // SweetAlert2
   {
-    from: 'node_modules/sweetalert2/dist/',
+    from: 'node_modules/sweetalert2/adminlte/adminlte/dist/',
     to: 'plugins/sweetalert2'
   },
   {
@@ -362,7 +362,7 @@ const Plugins = [
   },
   // jsGrid
   {
-    from: 'node_modules/jsgrid/dist',
+    from: 'node_modules/jsgrid/adminlte/adminlte/dist',
     to: 'plugins/jsgrid'
   },
   {
@@ -380,37 +380,37 @@ const Plugins = [
   },
   // bootstrap4-duallistbox
   {
-    from: 'node_modules/bootstrap4-duallistbox/dist',
+    from: 'node_modules/bootstrap4-duallistbox/adminlte/adminlte/dist',
     to: 'plugins/bootstrap4-duallistbox/'
   },
   // filterizr
   {
-    from: 'node_modules/filterizr/dist',
+    from: 'node_modules/filterizr/adminlte/adminlte/dist',
     to: 'plugins/filterizr/'
   },
   // ekko-lightbox
   {
-    from: 'node_modules/ekko-lightbox/dist',
+    from: 'node_modules/ekko-lightbox/adminlte/adminlte/dist',
     to: 'plugins/ekko-lightbox/'
   },
   // bootstrap-switch
   {
-    from: 'node_modules/bootstrap-switch/dist',
+    from: 'node_modules/bootstrap-switch/adminlte/adminlte/dist',
     to: 'plugins/bootstrap-switch/'
   },
   // jQuery Validate
   {
-    from: 'node_modules/jquery-validation/dist/',
+    from: 'node_modules/jquery-validation/adminlte/adminlte/dist/',
     to: 'plugins/jquery-validation'
   },
   // bs-custom-file-input
   {
-    from: 'node_modules/bs-custom-file-input/dist/',
+    from: 'node_modules/bs-custom-file-input/adminlte/adminlte/dist/',
     to: 'plugins/bs-custom-file-input'
   },
   // bs-stepper
   {
-    from: 'node_modules/bs-stepper/dist/',
+    from: 'node_modules/bs-stepper/adminlte/adminlte/dist/',
     to: 'plugins/bs-stepper'
   },
   // CodeMirror
@@ -436,12 +436,12 @@ const Plugins = [
   },
   // dropzonejs
   {
-    from: 'node_modules/dropzone/dist/',
+    from: 'node_modules/dropzone/adminlte/adminlte/dist/',
     to: 'plugins/dropzone'
   },
   // uPlot
   {
-    from: 'node_modules/uplot/dist/',
+    from: 'node_modules/uplot/adminlte/adminlte/dist/',
     to: 'plugins/uplot'
   }
 ]

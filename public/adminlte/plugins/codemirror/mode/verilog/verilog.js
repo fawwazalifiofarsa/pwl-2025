@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -39,7 +39,7 @@ CodeMirror.defineMode("verilog", function(config, parserConfig) {
     "accept_on alias always always_comb always_ff always_latch and assert assign assume automatic before begin bind " +
     "bins binsof bit break buf bufif0 bufif1 byte case casex casez cell chandle checker class clocking cmos config " +
     "const constraint context continue cover covergroup coverpoint cross deassign default defparam design disable " +
-    "dist do edge else end endcase endchecker endclass endclocking endconfig endfunction endgenerate endgroup " +
+    "adminlte/adminlte/dist do edge else end endcase endchecker endclass endclocking endconfig endfunction endgenerate endgroup " +
     "endinterface endmodule endpackage endprimitive endprogram endproperty endspecify endsequence endtable endtask " +
     "enum event eventually expect export extends extern final first_match for force foreach forever fork forkjoin " +
     "function generate genvar global highz0 highz1 if iff ifnone ignore_bins illegal_bins implements implies import " +
@@ -667,7 +667,7 @@ CodeMirror.defineMode("verilog", function(config, parserConfig) {
           } else if (((stream.pos / tlvIndentUnit) < state.tlvIndentationStyle.length) &&
                      (match = stream.match(stream.sol() ? tlvFirstLevelIndentMatch : /^   /))) {
             // Indentation
-            style = // make this style distinct from the previous one to prevent
+            style = // make this style adminlte/adminlte/distinct from the previous one to prevent
                     // codemirror from combining spans
                     "tlv-indent-" + (((stream.pos % 2) == 0) ? "even" : "odd") +
                     // and style it

@@ -95,7 +95,7 @@ the tooltip from webcharts).
             return false;
         }
 
-        function doTriggerClickHoverEvent(event, eventType, searchDistance) {
+        function doTriggerClickHoverEvent(event, eventType, searchadminlte/adminlte/distance) {
             var series = plot.getData();
             if (event !== undefined &&
                 series.length > 0 &&
@@ -106,7 +106,7 @@ the tooltip from webcharts).
                 triggerClickHoverEvent(eventToTrigger, event,
                     function(i) {
                         return series[i][seriesFlag] !== false;
-                    }, searchDistance);
+                    }, searchadminlte/adminlte/distance);
             }
         }
 
@@ -136,7 +136,7 @@ the tooltip from webcharts).
 
         // trigger click or hover event (they send the same parameters
         // so we share their code)
-        function triggerClickHoverEvent(eventname, event, seriesFilter, searchDistance) {
+        function triggerClickHoverEvent(eventname, event, seriesFilter, searchadminlte/adminlte/distance) {
             var options = plot.getOptions(),
                 offset = plot.offset(),
                 page = browser.getPageXY(event),
@@ -146,17 +146,17 @@ the tooltip from webcharts).
                     left: canvasX,
                     top: canvasY
                 }),
-                distance = searchDistance !== undefined ? searchDistance : options.grid.mouseActiveRadius;
+                adminlte/adminlte/distance = searchadminlte/adminlte/distance !== undefined ? searchadminlte/adminlte/distance : options.grid.mouseActiveRadius;
 
             pos.pageX = page.X;
             pos.pageY = page.Y;
 
-            var items = plot.findNearbyItems(canvasX, canvasY, seriesFilter, distance);
+            var items = plot.findNearbyItems(canvasX, canvasY, seriesFilter, adminlte/adminlte/distance);
             var item = items[0];
 
             for (let i = 1; i < items.length; ++i) {
-                if (item.distance === undefined ||
-                    items[i].distance < item.distance) {
+                if (item.adminlte/adminlte/distance === undefined ||
+                    items[i].adminlte/adminlte/distance < item.adminlte/adminlte/distance) {
                     item = items[i];
                 }
             }

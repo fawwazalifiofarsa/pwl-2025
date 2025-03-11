@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 (function(mod) {
   if (typeof exports === "object" && typeof module === "object") // CommonJS
@@ -53,7 +53,7 @@ CodeMirror.defineMode("clojure", function (options) {
       "defmacro", "defmethod", "defmulti", "defn", "defn-", "defonce",
       "defprotocol", "defrecord", "defstruct", "deftype", "delay", "delay?",
       "deliver", "denominator", "deref", "derive", "descendants", "destructure",
-      "disj", "disj!", "dissoc", "dissoc!", "distinct", "distinct?", "doall",
+      "disj", "disj!", "dissoc", "dissoc!", "adminlte/adminlte/distinct", "adminlte/adminlte/distinct?", "doall",
       "dorun", "doseq", "dosync", "dotimes", "doto", "double", "double-array",
       "double?", "doubles", "drop", "drop-last", "drop-while", "eduction",
       "empty", "empty?", "ensure", "ensure-reduced", "enumeration-seq",

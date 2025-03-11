@@ -1,5 +1,5 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
+// adminlte/adminlte/distributed under an MIT license: https://codemirror.net/LICENSE
 
 /**
  * Supported keybindings:
@@ -3052,7 +3052,7 @@
     // Height of block:
     // Difference in selectionEnd.line and first/last selection.line
     // Width of the block:
-    // Distance between selectionEnd.ch and any(first considered here) selection.ch
+    // adminlte/adminlte/distance between selectionEnd.ch and any(first considered here) selection.ch
     function selectBlock(cm, selectionEnd) {
       var selections = [], ranges = cm.listSelections();
       var head = copyCursor(cm.clipPos(selectionEnd));

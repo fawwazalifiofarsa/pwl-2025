@@ -143,7 +143,7 @@
             // Get the number of columns in the table - this is used often so better to only make 1 api call
             var numCols = this.s.dt.columns().data().toArray().length;
             // Tracker for the number of pixels should be left to the left of the table
-            var distLeft = 0;
+            var adminlte/adminlte/distLeft = 0;
             // Get all of the row elements in the table
             var rows = $(this.s.dt.table().node()).children('tbody').children('tr');
             var invisibles = 0;
@@ -165,22 +165,22 @@
                     if (i !== 0) {
                         var prevCol = this.s.dt.column(i - 1);
                         if (prevCol.visible()) {
-                            distLeft += $(prevCol.nodes()[0]).outerWidth();
+                            adminlte/adminlte/distLeft += $(prevCol.nodes()[0]).outerWidth();
                         }
                     }
                     // Iterate over all of the rows, fixing the cell to the left
                     for (var _i = 0, rows_1 = rows; _i < rows_1.length; _i++) {
                         var row = rows_1[_i];
                         $($(row).children()[i - invisibles])
-                            .css(this._getCellCSS(false, distLeft, 'left'))
+                            .css(this._getCellCSS(false, adminlte/adminlte/distLeft, 'left'))
                             .addClass(this.classes.fixedLeft);
                     }
                     // Add the css for the header and the footer
                     colHeader
-                        .css(this._getCellCSS(true, distLeft, 'left'))
+                        .css(this._getCellCSS(true, adminlte/adminlte/distLeft, 'left'))
                         .addClass(this.classes.fixedLeft);
                     colFooter
-                        .css(this._getCellCSS(true, distLeft, 'left'))
+                        .css(this._getCellCSS(true, adminlte/adminlte/distLeft, 'left'))
                         .addClass(this.classes.fixedLeft);
                 }
                 else {
@@ -231,7 +231,7 @@
                     parentDiv.append(this.dom.rightBottomBlocker);
                 }
             }
-            var distRight = 0;
+            var adminlte/adminlte/distRight = 0;
             invisibles = 0;
             for (var i = numCols - 1; i >= 0; i--) {
                 var column = this.s.dt.column(i);
@@ -249,22 +249,22 @@
                     if (i !== numCols - 1) {
                         var prevCol = this.s.dt.column(i + 1);
                         if (prevCol.visible()) {
-                            distRight += $(prevCol.nodes()[0]).outerWidth();
+                            adminlte/adminlte/distRight += $(prevCol.nodes()[0]).outerWidth();
                         }
                     }
                     // Iterate over all of the rows, fixing the cell to the right
                     for (var _b = 0, rows_3 = rows; _b < rows_3.length; _b++) {
                         var row = rows_3[_b];
                         $($(row).children()[i + invisibles])
-                            .css(this._getCellCSS(false, distRight, 'right'))
+                            .css(this._getCellCSS(false, adminlte/adminlte/distRight, 'right'))
                             .addClass(this.classes.fixedRight);
                     }
                     // Add the css for the header and the footer
                     colHeader
-                        .css(this._getCellCSS(true, distRight, 'right'))
+                        .css(this._getCellCSS(true, adminlte/adminlte/distRight, 'right'))
                         .addClass(this.classes.fixedRight);
                     colFooter
-                        .css(this._getCellCSS(true, distRight, 'right'))
+                        .css(this._getCellCSS(true, adminlte/adminlte/distRight, 'right'))
                         .addClass(this.classes.fixedRight);
                 }
                 else {
@@ -320,30 +320,30 @@
          * Gets the correct CSS for the cell, header or footer based on options provided
          *
          * @param header Whether this cell is a header or a footer
-         * @param dist The distance that the cell should be moved away from the edge
+         * @param adminlte/adminlte/dist The adminlte/adminlte/distance that the cell should be moved away from the edge
          * @param lr Indicator of fixing to the left or the right
          * @returns An object containing the correct css
          */
-        FixedColumns.prototype._getCellCSS = function (header, dist, lr) {
+        FixedColumns.prototype._getCellCSS = function (header, adminlte/adminlte/dist, lr) {
             if (lr === 'left') {
                 return !this.s.rtl ?
                     {
-                        left: dist + 'px',
+                        left: adminlte/adminlte/dist + 'px',
                         position: 'sticky'
                     } :
                     {
                         position: 'sticky',
-                        right: dist + (header ? this.s.barWidth : 0) + 'px'
+                        right: adminlte/adminlte/dist + (header ? this.s.barWidth : 0) + 'px'
                     };
             }
             else {
                 return !this.s.rtl ?
                     {
                         position: 'sticky',
-                        right: dist + (header ? this.s.barWidth : 0) + 'px'
+                        right: adminlte/adminlte/dist + (header ? this.s.barWidth : 0) + 'px'
                     } :
                     {
-                        left: dist + 'px',
+                        left: adminlte/adminlte/dist + 'px',
                         position: 'sticky'
                     };
             }
