@@ -2,19 +2,37 @@
 
 namespace Database\Seeders;
 
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 class SupplierSeeder extends Seeder
 {
-    public function run()
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
     {
         $data = [
-            ['supplier_id' => 1, 'supplier_kode' => 'SUP01', 'supplier_nama' => 'Supplier A', 'supplier_alamat' => 'Jl. A No. 1'],
-            ['supplier_id' => 2, 'supplier_kode' => 'SUP02', 'supplier_nama' => 'Supplier B', 'supplier_alamat' => 'Jl. B No. 2'],
-            ['supplier_id' => 3, 'supplier_kode' => 'SUP03', 'supplier_nama' => 'Supplier C', 'supplier_alamat' => 'Jl. C No. 3'],
+            [
+                'supplier_id' => 1,
+                'supplier_kode' => 'NJG',
+                'supplier_nama' => 'Nathanael Juan Gracedo',
+                'supplier_alamat' => 'Kediri',
+            ],
+            [
+                'supplier_id' => 2,
+                'supplier_kode' => 'AK',
+                'supplier_nama' => 'Ahmad Kasim',
+                'suplier_alamat' => 'Blitar',
+            ],
+            [
+                'supplier_id' => 3,
+                'supplier_kode' => 'AM',
+                'supplier_nama' => 'Ah Meng',
+                'supplier_alamat' => 'Surabaya',
+            ],
         ];
-
         DB::table('m_supplier')->insert($data);
     }
 }
