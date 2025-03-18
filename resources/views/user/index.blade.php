@@ -60,8 +60,9 @@
                 $('#myModal').modal('show');
             });
         }
+        var dataUser;
         $(document).ready(function() {
-            var dataUser = $('#table_user').DataTable({
+            dataUser = $('#table_user').DataTable({
                 serverSide: true,
                 ajax: {
                     "url": "{{ url('user/list') }}",
