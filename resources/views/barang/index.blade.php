@@ -9,6 +9,7 @@
                 <button onclick="modalAction('{{ url('/barang/create_ajax') }}')" class="btn
 btn-success">Tambah Data
                     (Ajax)</button>
+                <a href="{{ url('/barang/export_pdf') }}" class="btn btn-warning"><i class="fa fa-filepdf"></i> Export Barang</a>
             </div>
         </div>
         <div class="card-body">
