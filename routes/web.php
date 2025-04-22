@@ -13,8 +13,11 @@ Route::pattern('id', '[0-9]+'); // artinya ketika ada parameter {id}, maka harus
 
 Route::get('login', [AuthController::class, 'login'])->name('login');
 Route::post('login', [AuthController::class, 'postlogin']);
-Route::get('logout', [AuthController::class, 'logout'])->middleware('auth');Route::get('register', [AuthController::class, 'register']);
-Route::post('register', [AuthController::class, 'postRegister']);
+Route::get('logout', [AuthController::class, 'logout'])->middleware('auth');
+Route::get('register', [AuthController::class, 'register']);
+Route::post('postRegister', [AuthController::class, 'postRegister']);
+Route::get('profile', [AuthController::class, 'profile'])->middleware('auth')->name('profile');
+Route::post('profile/update', [AuthController::class, 'update'])->middleware('auth');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/', [WelcomeController::class, 'index']);
@@ -42,7 +45,7 @@ Route::middleware(['auth'])->group(function () {
     });
 
     // artinya semua route di dalam group ini harus punya role ADM (Administrator)
-    Route::middleware(['authorize:ADM,MNG'])->group(function () {
+    Route::middleware(['authorize:ADM'])->group(function () {
         Route::get('/level', [LevelController::class, 'index']);
         Route::post('/level/list', [LevelController::class, 'list']); // untuk list json datatables
         Route::get('/level/create', [LevelController::class, 'create']);
@@ -118,7 +121,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('export_pdf', [SupplierController::class, 'export_pdf']); // export pdf
     });
 
-    Route::middleware(['authorize:ADM,MNG'])->group(function(){
+    Route::middleware(['authorize:ADM,MNG'])->group(function () {
         Route::get('/barang', [BarangController::class, 'index']);
         Route::post('/barang/list', [BarangController::class, 'list']);
 

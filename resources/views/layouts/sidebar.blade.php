@@ -75,4 +75,12 @@
             </li>
         </ul>
     </nav>
+    <!-- Profile Section at the Bottom -->
+    <div class="user-profile mt-3 mb-3 text-center" style="position: absolute; bottom: 0; width: calc(100% - 1rem);">
+        <a href="{{ url('/profile') }}" class="nav-link {{ $activeMenu == 'profile' ? 'active' : '' }}">
+            <img src="{{ Auth::user()->profile_picture ? asset('uploads/profile/' . Auth::user()->profile_picture) : asset('profile.png') }}"
+                class="img-circle elevation-2" alt="User Image" style="width: 80px; height: 80px;">
+            <p class="mt-2">{{ Auth::user()->nama }}</p>
+        </a>
+    </div>
 </div>
